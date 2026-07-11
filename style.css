@@ -14,7 +14,7 @@
 }
 .sidebar{
     background-color: black;
-    width: 360px;
+    width: 22.5rem;
     margin-right: 0.5rem;
     border-radius:1rem;
 }
@@ -285,4 +285,41 @@ a{
     position: fixed;
     bottom: 33px;
     opacity: 1;
+}
+@media (max-width:500px) {
+    .sidebar{
+        display: none;
+    }
+    .card{
+        width: 85px;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        margin-left:1.5rem ;
+        margin-top: 1rem;
+    }
+    .dis{
+        align-items: end;
+        height: 0.75rem;
+    }
+    .album{
+        width: 60%;
+    }
+    .album-icon{
+        display: none;
+    }
+    .playback-bar span{
+        display: none;
+    }
+    .dis{
+        display: inline;
+    }
+    .progress-bar{
+        display: none;
+    }
+
+}
+@media (min-width:500px) {
+    .sidebar{
+        width: 250px;
+    }
 }
